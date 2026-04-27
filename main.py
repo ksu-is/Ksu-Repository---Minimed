@@ -12,7 +12,9 @@ if choice == "1":
     print("Correct! This points toward preeclampsia.")
 elif choice == "2":
     print("Not first step. You need more info first.")
+    print("Incorrect. Try again.")
 elif choice == "3":
     print("She reports vision changes -> an important clue")
+    print("Nice try, but this answer is not the best next step.")
 else:
     print("Invalid choice")
