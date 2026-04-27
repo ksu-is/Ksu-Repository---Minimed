@@ -1,3 +1,4 @@
+score = 0
 print("Patient: 28-year-old pregnant woman with headache and high BP")
 
 print("What do you want to do?")
@@ -10,6 +11,7 @@ choice = input("Enter choice (1, 2, or 3): ")
 if choice == "1":
     print("Labs show protein in urine which, suggests preeclampsia")
     print("Correct! This points toward preeclampsia.")
+    score += 1 
 elif choice == "2":
     print("Not first step. You need more info first.")
     print("Incorrect. Try again.")
@@ -17,4 +19,5 @@ elif choice == "3":
     print("She reports vision changes -> an important clue")
     print("Nice try, but this answer is not the best next step.")
 else:
-    print("Invalid choice")
+    print("Invalid choice. Please enter 1, 2, or 3")
+print("Your score:", score)
