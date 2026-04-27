@@ -20,4 +20,13 @@ elif choice == "3":
     print("Nice try, but this answer is not the best next step.")
 else:
     print("Invalid choice. Please enter 1, 2, or 3")
+
+print("What is your diagnosis?")
+print("1. Preeclampsia")
+print("2. Migraine")
+print("3. Anxiety")
+
+diagnosis = input("Enter choice (1, 2, or 3): ")
+
+
 print("Your score:", score)
