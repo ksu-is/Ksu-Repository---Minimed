@@ -5,10 +5,11 @@ print("1. Order labs")
 print("2. Give medication")
 print("3. Ask more history")
 
-choice = input("Enter choice (Type 1, 2, or 3): ")
+choice = input("Enter choice (1, 2, or 3): ")
 
 if choice == "1":
     print("Labs show protein in urine which, suggests preeclampsia")
+    print("Correct! This points toward preeclampsia.")
 elif choice == "2":
     print("Not first step. You need more info first.")
 elif choice == "3":
