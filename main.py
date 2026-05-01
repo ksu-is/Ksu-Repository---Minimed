@@ -1,3 +1,6 @@
+print("Welcome to MiniMed!")
+print("This program helps you practice clinical decision-making.\n")
+
 score = 0
 print("Patient: 28-year-old pregnant woman with headache and high BP")
 
