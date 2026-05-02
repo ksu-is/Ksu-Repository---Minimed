@@ -45,7 +45,7 @@ else:
 print("\nCase complete.")
 print("Your score:", score)
 
-again = input("\nWould you like to try again? (yes/no): ")
+again = input("\nWould you like to try again? (yes/no): ").lower().strip()
 
 if again == "yes":
     print("Restart the program to try again.")
