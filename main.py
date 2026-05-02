@@ -41,4 +41,6 @@ elif diagnosis == "3":
 else:
     print("Invalid choice.")
 
+
+print("\nCase complete.")
 print("Your score:", score)
