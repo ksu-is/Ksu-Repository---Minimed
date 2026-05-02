@@ -33,4 +33,3 @@
 - [ ] Let the user choose which case they want to practice.
 - [ ] Add more detailed explanations after each answer.
 - [ ] Create a simple menu system.
-
