@@ -44,3 +44,10 @@ else:
 
 print("\nCase complete.")
 print("Your score:", score)
+
+again = input("\nWould you like to try again? (yes/no): ")
+
+if again == "yes":
+    print("Restart the program to try again.")
+else:
+    print("Thanks for using MiniMed!")
