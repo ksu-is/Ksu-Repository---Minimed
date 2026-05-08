@@ -126,7 +126,7 @@ while not case3_done:
     case3_final = input("Enter choice (1, 2, or 3): ")
 
     if case3_final == "1":
-        print("Correct! The main conclusion is post-traumatic stress disorder.")
+        print("Correct! The main diagnosis is post-traumatic stress disorder.")
         score += 1
         case3_done = True
     elif case3_final == "2":
@@ -138,6 +138,49 @@ while not case3_done:
     else:
         print("Invalid choice. Try again.")
 
+print("\n--- Case 4 ---")
+print("Patient: 36-year-old man has a chronic productive cough that is worse at night.")
+print("Chest x-ray is normal. He has a smoking history and no fever or weight loss.")
+
+print("\nWhat is the best next step?")
+print("1. Order pulmonary function testing")
+print("2. Start antibiotics")
+print("3. Order bronchoscopy immediately")
+
+case4_step1 = input("Enter choice (1, 2, or 3): ")
+
+if case4_step1 == "1":
+    print("Best choice. Pulmonary function testing helps evaluate chronic cough and possible obstructive lung disease.")
+    score += 1
+elif case4_step1 == "2":
+    print("This could be considered if infection was likely, but he has no fever and the chest x-ray is normal.")
+elif case4_step1 == "3":
+    print("Bronchoscopy is too invasive as the first step for this presentation.")
+else:
+    print("Invalid choice.")
+
+case4_done = False
+
+while not case4_done:
+    print("\nAfter considering the history and workup, what is the main diagnosis?")
+    print("1. Chronic bronchitis")
+    print("2. Pneumonia")
+    print("3. Lung cancer")
+
+    case4_final = input("Enter choice (1, 2, or 3): ")
+
+    if case4_final == "1":
+        print("Correct! The main diagnosis is chronic bronchitis.")
+        score += 1
+        case4_done = True
+    elif case4_final == "2":
+        print("Incorrect. Pneumonia is less likely because he has no fever and a normal chest x-ray.")
+        print("Try again.")
+    elif case4_final == "3":
+        print("Incorrect. Lung cancer is less likely with a normal chest x-ray and no weight loss, but risk factors should still be considered.")
+        print("Try again.")
+    else:
+        print("Invalid choice. Try again.")
 
 print("\nCase complete.")
 print("Your score:", score)
