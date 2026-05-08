@@ -54,6 +54,14 @@ This tool is meant for students who want to better understand how to think throu
 Healthcare chatbot example:
 https://github.com/KalyanM45/Medical-Assisstant
 
+Quiz Game GitHub Repository:
+https://github.com/cherryWood55/Quiz-Game
+
+This project was used for inspiration on:
+- quiz structure
+- user input handling
+- scoring systems
+- multiple-choice logic
 ---
 
 ## Author
