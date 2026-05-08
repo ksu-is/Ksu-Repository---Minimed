@@ -264,6 +264,88 @@ while not case6_done:
     else:
         print("Invalid choice. Try again.")
 
+print("\n--- Case 7 ---")
+print("Patient: 19-year-old college student has fever, headache, neck stiffness, and confusion.")
+
+print("\nWhat is the best next step?")
+print("1. Give allergy medicine")
+print("2. Send home with rest")
+print("3. Start empiric antibiotics immediately")
+
+case7_step1 = input("Enter choice (1, 2, or 3): ")
+
+if case7_step1 == "1":
+    print("Not best. Allergy medicine does not treat meningitis symptoms.")
+elif case7_step1 == "2":
+    print("Not best. Fever, neck stiffness, and confusion are emergency symptoms.")
+elif case7_step1 == "3":
+    print("Best choice. This is concerning for meningitis, which needs urgent treatment.")
+    score += 1
+else:
+    print("Invalid choice.")
+
+case7_done = False
+
+while not case7_done:
+    print("\nWhat is the main diagnosis?")
+    print("1. Bacterial meningitis")
+    print("2. Migraine")
+    print("3. Seasonal allergies")
+
+    case7_final = input("Enter choice (1, 2, or 3): ")
+
+    if case7_final == "1":
+        print("Correct! The main diagnosis is bacterial meningitis.")
+        score += 1
+        case7_done = True
+    elif case7_final == "2":
+        print("Incorrect. Migraine does not usually cause fever and neck stiffness. Try again.")
+    elif case7_final == "3":
+        print("Incorrect. Allergies do not cause confusion and neck stiffness. Try again.")
+    else:
+        print("Invalid choice. Try again.")
+
+print("\n--- Case 8 ---")
+print("Patient: 50-year-old man has increased thirst, frequent urination, fatigue, and blurry vision.")
+
+print("\nWhat is the best next step?")
+print("1. Start antibiotics")
+print("2. Check blood glucose and A1c")
+print("3. Order ankle x-ray")
+
+case8_step1 = input("Enter choice (1, 2, or 3): ")
+
+if case8_step1 == "1":
+    print("Not best. There are no clear signs of infection.")
+elif case8_step1 == "2":
+    print("Best choice. These symptoms are concerning for diabetes.")
+    score += 1
+elif case8_step1 == "3":
+    print("Not best. His symptoms do not suggest an ankle injury.")
+else:
+    print("Invalid choice.")
+
+case8_done = False
+
+while not case8_done:
+    print("\nWhat is the main diagnosis?")
+    print("1. Pneumonia")
+    print("2. Appendicitis")
+    print("3. Type 2 diabetes mellitus")
+
+    case8_final = input("Enter choice (1, 2, or 3): ")
+
+    if case8_final == "3":
+        print("Correct! The main diagnosis is type 2 diabetes mellitus.")
+        score += 1
+        case8_done = True
+    elif case8_final == "1":
+        print("Incorrect. Pneumonia usually causes cough and fever. Try again.")
+    elif case8_final == "2":
+        print("Incorrect. Appendicitis usually causes abdominal pain. Try again.")
+    else:
+        print("Invalid choice. Try again.")
+
 print("\nCase complete.")
 print("Your score:", score)
 
