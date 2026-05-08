@@ -182,6 +182,88 @@ while not case4_done:
     else:
         print("Invalid choice. Try again.")
 
+print("\n--- Case 5 ---")
+print("Patient: 24-year-old woman has burning with urination, urinary frequency, and no fever or flank pain.")
+
+print("\nWhat is the best next step?")
+print("1. Order CT scan")
+print("2. Treat with antibiotics for uncomplicated UTI")
+print("3. Admit to the hospital")
+
+case5_step1 = input("Enter choice (1, 2, or 3): ")
+
+if case5_step1 == "1":
+    print("CT scan is not needed for simple UTI symptoms.")
+elif case5_step1 == "2":
+    print("Best choice. Symptoms suggest uncomplicated cystitis.")
+    score += 1
+elif case5_step1 == "3":
+    print("Admission is not needed because she has no fever or flank pain.")
+else:
+    print("Invalid choice.")
+
+case5_done = False
+
+while not case5_done:
+    print("\nWhat is the main diagnosis?")
+    print("1. Pyelonephritis")
+    print("2. Kidney stone")
+    print("3. Uncomplicated cystitis")
+
+    case5_final = input("Enter choice (1, 2, or 3): ")
+
+    if case5_final == "3":
+        print("Correct! The main diagnosis is uncomplicated cystitis.")
+        score += 1
+        case5_done = True
+    elif case5_final == "1":
+        print("Incorrect. Pyelonephritis usually has fever and flank pain. Try again.")
+    elif case5_final == "2":
+        print("Incorrect. Kidney stones usually cause severe flank pain. Try again.")
+    else:
+        print("Invalid choice. Try again.")
+
+print("\n--- Case 6 ---")
+print("Patient: 70-year-old woman has hip pain after a fall and cannot bear weight.")
+
+print("\nWhat is the best next step?")
+print("1. Tell her to rest at home")
+print("2. Start antibiotics")
+print("3. Order hip x-ray")
+
+case6_step1 = input("Enter choice (1, 2, or 3): ")
+
+if case6_step1 == "1":
+    print("Not best. Inability to bear weight after a fall needs evaluation.")
+elif case6_step1 == "2":
+    print("Not best. There are no signs of infection.")
+elif case6_step1 == "3":
+    print("Best choice. Hip fracture should be evaluated with imaging.")
+    score += 1
+else:
+    print("Invalid choice.")
+
+case6_done = False
+
+while not case6_done:
+    print("\nWhat is the main concern?")
+    print("1. Muscle soreness")
+    print("2. Hip fracture")
+    print("3. Cellulitis")
+
+    case6_final = input("Enter choice (1, 2, or 3): ")
+
+    if case6_final == "2":
+        print("Correct! The main concern is hip fracture.")
+        score += 1
+        case6_done = True
+    elif case6_final == "1":
+        print("Incorrect. She cannot bear weight, which is concerning. Try again.")
+    elif case6_final == "3":
+        print("Incorrect. This does not sound like cellulitis. Try again.")
+    else:
+        print("Invalid choice. Try again.")
+
 print("\nCase complete.")
 print("Your score:", score)
 
